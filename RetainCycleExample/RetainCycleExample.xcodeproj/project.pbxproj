@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45496FC22748526600520D60 /* ModuleControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45496FBB2748526600520D60 /* ModuleControllerConfigurator.swift */; };
+		45496FC32748526700520D60 /* ModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45496FBC2748526600520D60 /* ModuleRouter.swift */; };
+		45496FC42748526700520D60 /* SomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45496FBD2748526600520D60 /* SomeWorker.swift */; };
+		45496FC52748526700520D60 /* ModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45496FBE2748526600520D60 /* ModuleViewController.swift */; };
+		45496FC62748526700520D60 /* SomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45496FBF2748526600520D60 /* SomeView.swift */; };
+		45496FC72748526700520D60 /* ModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45496FC02748526600520D60 /* ModuleInteractor.swift */; };
+		45496FC82748526700520D60 /* ModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45496FC12748526600520D60 /* ModulePresenter.swift */; };
+		45496FCC2748526F00520D60 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45496FCB2748526F00520D60 /* MockService.swift */; };
 		457193372743EE1200A733DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457193362743EE1200A733DD /* AppDelegate.swift */; };
 		457193392743EE1200A733DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457193382743EE1200A733DD /* SceneDelegate.swift */; };
 		4571933B2743EE1200A733DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4571933A2743EE1200A733DD /* ViewController.swift */; };
@@ -16,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45496FBB2748526600520D60 /* ModuleControllerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleControllerConfigurator.swift; sourceTree = "<group>"; };
+		45496FBC2748526600520D60 /* ModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleRouter.swift; sourceTree = "<group>"; };
+		45496FBD2748526600520D60 /* SomeWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeWorker.swift; sourceTree = "<group>"; };
+		45496FBE2748526600520D60 /* ModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleViewController.swift; sourceTree = "<group>"; };
+		45496FBF2748526600520D60 /* SomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeView.swift; sourceTree = "<group>"; };
+		45496FC02748526600520D60 /* ModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInteractor.swift; sourceTree = "<group>"; };
+		45496FC12748526600520D60 /* ModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulePresenter.swift; sourceTree = "<group>"; };
+		45496FCB2748526F00520D60 /* MockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
 		457193332743EE1200A733DD /* RetainCycleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetainCycleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		457193362743EE1200A733DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		457193382743EE1200A733DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +53,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45496FBA2748526600520D60 /* module */ = {
+			isa = PBXGroup;
+			children = (
+				45496FBB2748526600520D60 /* ModuleControllerConfigurator.swift */,
+				45496FBC2748526600520D60 /* ModuleRouter.swift */,
+				45496FBD2748526600520D60 /* SomeWorker.swift */,
+				45496FBE2748526600520D60 /* ModuleViewController.swift */,
+				45496FBF2748526600520D60 /* SomeView.swift */,
+				45496FC02748526600520D60 /* ModuleInteractor.swift */,
+				45496FC12748526600520D60 /* ModulePresenter.swift */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		45496FCA2748526F00520D60 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				45496FCB2748526F00520D60 /* MockService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
 		4571932A2743EE1200A733DD = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +94,8 @@
 		457193352743EE1200A733DD /* RetainCycleExample */ = {
 			isa = PBXGroup;
 			children = (
+				45496FCA2748526F00520D60 /* services */,
+				45496FBA2748526600520D60 /* module */,
 				457193362743EE1200A733DD /* AppDelegate.swift */,
 				457193382743EE1200A733DD /* SceneDelegate.swift */,
 				4571933A2743EE1200A733DD /* ViewController.swift */,
@@ -137,8 +177,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45496FC82748526700520D60 /* ModulePresenter.swift in Sources */,
+				45496FC62748526700520D60 /* SomeView.swift in Sources */,
+				45496FC32748526700520D60 /* ModuleRouter.swift in Sources */,
 				4571933B2743EE1200A733DD /* ViewController.swift in Sources */,
+				45496FCC2748526F00520D60 /* MockService.swift in Sources */,
+				45496FC72748526700520D60 /* ModuleInteractor.swift in Sources */,
+				45496FC52748526700520D60 /* ModuleViewController.swift in Sources */,
 				457193372743EE1200A733DD /* AppDelegate.swift in Sources */,
+				45496FC42748526700520D60 /* SomeWorker.swift in Sources */,
+				45496FC22748526600520D60 /* ModuleControllerConfigurator.swift in Sources */,
 				457193392743EE1200A733DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
