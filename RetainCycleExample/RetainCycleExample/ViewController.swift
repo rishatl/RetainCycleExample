@@ -19,5 +19,13 @@ final class ViewController: UIViewController {
         view.backgroundColor = .systemBackground
 
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+
+        super.viewDidAppear(animated)
+        let moduleVC = ModuleControllerConfigurator().setupModule()
+        present(moduleVC, animated: true)
+
+    }
     
 }
