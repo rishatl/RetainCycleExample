@@ -13,8 +13,7 @@ final class ModulePresenter {
 
     //MARK: - Private Properties
 
-    #warning("weak")
-    private var viewController: ModuleViewController!
+    private weak var viewController: ModuleViewController!
 
     //MARK: - Initialization
 

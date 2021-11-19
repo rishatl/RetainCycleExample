@@ -24,11 +24,10 @@ final class ModuleInteractor {
 
     //MARK: - Public Methods
 
-    #warning("[weak self]")
     func doSomething() {
 
-        worker.doSomething {
-            self.presenter.presentResult($0)
+        worker.doSomething { [weak self] in
+            self?.presenter.presentResult($0)
         }
 
     }

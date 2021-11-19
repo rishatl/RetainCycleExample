@@ -13,8 +13,7 @@ final class SomeWorker {
 
     //MARK: - Private Properties
 
-    #warning("weak")
-    private var interactor: ModuleInteractor
+    private weak var interactor: ModuleInteractor?
     private let mockService = MockService()
 
     //MARK: - Initialisation
@@ -25,11 +24,10 @@ final class SomeWorker {
 
     //MARK: - Public Methods
 
-    #warning("[weak self]")
     func doSomething(completion: @escaping (String) -> Void) {
 
-        mockService.doSomething {
-            self.log()
+        mockService.doSomething { [weak self] in
+            self?.log()
             completion($0)
         }
         
