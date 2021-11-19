@@ -13,8 +13,7 @@ final class ModuleRouter {
 
     //MARK: - Private Properties
 
-    #warning("weak")
-    private var viewController: UIViewController!
+    private weak var viewController: UIViewController!
 
     //MARK: - Initialization
 

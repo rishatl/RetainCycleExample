@@ -19,8 +19,7 @@ final class SomeView: UIView {
 
     //MARK: - SomeDelegate
 
-    #warning("weak")
-    var delegate: SomeViewDelegate?
+    weak var delegate: SomeViewDelegate?
 
     //MARK: - Initialization
 
